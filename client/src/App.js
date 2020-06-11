@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Directory from "./components/Directory/Directory";
+import NavBar from "./components/NavBar/NavBar";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -7,11 +9,9 @@ function App() {
     <div className="App">
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to React</h2>
+        <NavBar></NavBar>
       </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
+      <Directory></Directory>
     </div>
   );
 }
